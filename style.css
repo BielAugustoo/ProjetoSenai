@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #000000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #f87510;
+  height: 8vh;
+}
+
+/*main {
+  background: url('img/bg.jpg') no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}*/
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.imagem-banner {
+  width: 100%;
+}
+
+.imagem-banner2 {
+  width: 100%;
+}
+
+.principal {
+  padding: 10%;
+  background: linear-gradient(#ffbd59, rgb(255, 136, 0));
+  font-size: 30px;
+}
+
+.titulo-principal {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #000000;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #f87510;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* CSS Login/cadastro */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #ffbd59;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+.card {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 4%;
+  box-shadow: 3px 3px 1px 0px #00000060;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #272262;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #272262;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #4038a0;
+}
+
+.label-float label {
+  color: #272262;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+.label-float input:focus + label,
+.label-float input:valid + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #4038a0;
+}
+
+button {
+  background-color: transparent;
+  border-color: #272262;
+  color: #272262;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease-out;
+}
+
+button:hover {
+  background-color: #272262;
+  color: rgb(0, 0, 0);
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+}
+p {
+  color: #000000;
+  font-size: 14pt;
+  text-align: center;
+}
+a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/* CSS Rodapé */
+
+footer {
+  text-align: center;
+  background: url('Img/rodape.jpeg');
+  padding: 40px 0;
+  margin-top: 10%;
+  height: 50%;
+}
+
+footer > img {
+  width: 50px;
+  height: 25px;
+}
+
+.copyright {
+  color: #000000;
+  font-size: 13px;
+  margin-top: 70px;
+}

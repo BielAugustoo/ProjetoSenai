@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ControlFire</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo" href="home.html">ControlFire</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="home.html">Início</a></li>
+          <li><a href="sobrenos.html">Sobre Nós</a></li>
+          <li><a href="contato.hmtl">Contato</a></li>
+          <li><a href="login.html">Área restrita</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form>
+      <div class="container">
+        <div class="card">
+      <h1>Cadastrar</h1>
+      <div class="label-float">
+        <input type="text" id="Nome" placeholder="" required />
+        <label id= "labelNome" for="Nome">Empresa </label>
+      </div>
+      <div class="label-float">
+        <input type="text" id="email" placeholder="" required />
+        <label id= "labelemail" for="email">E-Mail </label>
+      </div>
+      <div class="label-float">
+        <input type="password" id="senha" placeholder="" required />
+        <label id= "labelsenha" for="usuario">Senha </label>
+      </div>
+      <div class="label-float">
+        <input type="password" id="confirmSenha" placeholder="" required />
+        <label id= "labelconfirmSenha" for="confirmSenha">Confirmar Senha </label>
+      </div>
+      <div class="justify-center">
+        <button onclick="cadastrar()">Cadastrar</button>
+      </div>
+    </form>
+    <script src="mobile-navbar.js"></script>
+  </body>
+</html>
+
